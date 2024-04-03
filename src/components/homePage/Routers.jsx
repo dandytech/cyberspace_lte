@@ -39,7 +39,10 @@ export default function Routers() {
           <p>Superfast Outdoor Broadband Device</p>
           <p className="">NGN28,500</p>
           <p>
-            <button className="w-full rounded-2xl bg-[#0080CF] px-10 py-1 text-center text-white">
+            <button
+              className="w-full rounded-2xl bg-[#0080CF] px-10 py-1 text-center text-white"
+              onClick={() => navigate("/device-details")}
+            >
               Buy Now
             </button>
           </p>
@@ -55,7 +58,10 @@ export default function Routers() {
           <p>Superfast Outdoor IDU Device</p>
           <p className="">NGN28,500</p>
           <p>
-            <button className="w-full rounded-2xl bg-[#0080CF] px-10 py-1 text-center text-white">
+            <button
+              className="w-full rounded-2xl bg-[#0080CF] px-10 py-1 text-center text-white"
+              onClick={() => navigate("/device-details")}
+            >
               Buy Now
             </button>
           </p>
