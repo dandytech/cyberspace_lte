@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  body {
+    background: #eee;
+    font-family:
+      Helvetica Neue,
+      Helvetica,
+      Arial,
+      sans-serif;
+    font-size: 16px;
+    color: #000;
+    margin: 0;
+    overflow-x: hidden !important;
+    padding: 0;
+  }
+
+  .overflow-hidden {
+    overflow: hidden !important;
+  }
+  @media (min-width: 640px) {
+    body {
+      overflow-x: hiden;
+    }
+  }
+  @media (min-width: 768px) {
+    body {
+      overflow-x: hiden;
+    }
+  }
+  @media (min-width: 1024px) {
+    body {
+      overflow-x: hiden;
+    }
+  }
+  @media (min-width: 1280px) {
+    body {
+      overflow-x: hiden;
+    }
+  }
+  @media (min-width: 1536px) {
+    body {
+      overflow-x: hiden;
+    }
+  }
+
+  /* SWIPER STYLES */
+  .swiper1 .swiper-pagination {
+    transform: translateX(-36%);
+  }
+
+  .swiper1 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin: 0 5px;
+  }
+
+  .swiper1 .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 26px;
+    border-radius: 10%;
+    height: 10px;
+    background-color: #ff0000;
+  }
+
+  @media (min-width: 768px) {
+    .swiper2 {
+      height: 300px;
+    }
+  }
+
+  @media (max-width: 834px) {
+    .swiper2 {
+    height: auto;
+    }
+  }
+
+
+  .swiper2 .swiper-pagination {
+    /* transform: translateX(-36%); */
+    margin-top: 20px !important;
+    position: absolute !important;
+
+    top: 20;
+  }
+
+  .swiper2 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin: 0 5px;
+  }
+
+  .swiper2 .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 26px;
+    border-radius: 10%;
+    height: 10px;
+    background-color: #ff0000;
+  }
+
+
+  @media (min-width: 768px) {
+    .swiper3 {
+      height: 270px;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .swiper3 {
+    height: 210px;
+    }
+  }
+
+  .swiper3 .swiper-pagination {
+    /* transform: translateX(-36%); */
+    margin-top: 20px !important;
+    position: absolute !important;
+
+    top: 20;
+  }
+
+  .swiper3 .swiper-pagination-bullet {
+    width: 12px;
+    height: 12px;
+
+    background-color: black;
+    border-radius: 50%;
+    opacity: 0.5;
+    margin: 0 5px;
+  }
+
+  .swiper3 .swiper-pagination-bullet-active {
+    opacity: 1;
+    width: 26px;
+    border-radius: 10%;
+    height: 10px;
+    background-color: #ff0000;
+  }
+
+
+
+
+}
