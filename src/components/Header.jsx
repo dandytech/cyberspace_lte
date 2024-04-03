@@ -67,7 +67,7 @@ const navigate = useNavigate();
       </div>
 
       <div
-        className={`bg-style text-style ${isSticky ? "bg-style text-style p-5 lg:px-0" : "bg-white p-5 lg:px-0"}`}
+        className={`bg-style text-style py-5  ${isSticky ? "bg-style text-style lg:p-5 lg:px-0 " : "bg-white lg:px-0"}`}
       >
         <div className="relative m-auto flex items-center justify-between lg:w-[85%]">
           <button onClick={()=>navigate("/home")}>
