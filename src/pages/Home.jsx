@@ -86,11 +86,11 @@ export default function Home() {
 
       <div
         onClick={scroll}
-        className={`bottom-0 right-0 z-50  cursor-pointer items-center justify-center  ${
+        className={`bottom-0 right-0 z-50 border border-white p-1  cursor-pointer items-center justify-center  ${
           visible ? "fixed bottom-0 right-0" : ""
         }`}
       >
-        <span className="text-2x text-style bg-style md:text-3xl lg:text-4xl">
+        <span className="text-2x  text-style text-2xl bg-style  md:text-3xl lg:text-4xl">
           <AiOutlineArrowUp />
         </span>
       </div>
