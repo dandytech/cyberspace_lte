@@ -15,8 +15,8 @@ export default function Home() {
   return (
     <div className="bg-style text-style h-auto bg-white">
       <Banner />
-      <div className="fixed right-10 z-50 mt-[-200px]">
-        <div className="absolute  z-50 flex w-[40px] items-center justify-center bg-[#DE0F04] p-2 text-center">
+      <div className="fixed right-10 z-30 mt-[-200px]">
+        <div className="absolute  z-40 flex w-[40px] items-center justify-center bg-[#DE0F04] p-2 text-center">
           <button>
             {" "}
             <img src={cart} alt="cart" />{" "}

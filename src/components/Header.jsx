@@ -35,11 +35,11 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Empty dependency array ensures the effect runs only once
-const navigate = useNavigate();
+  const navigate = useNavigate();
 
   return (
     <div
-      className={`w-[100] ${isSticky ? "border-b-3 header fixed z-50 m-auto w-[100%] border-b-2" : ""}`}
+      className={`w-[100] z-50 ${isSticky ? "border-b-3 header fixed z-50 m-auto w-[100%] border-b-2" : ""}`}
     >
       <div className="hidden bg-[url('/src/data/Rectangle1.png')] bg-cover  bg-center bg-no-repeat p-3 font-extralight text-white lg:block">
         <div className="m-auto flex w-[85%]  items-center justify-between">
@@ -70,7 +70,7 @@ const navigate = useNavigate();
         className={`bg-style text-style py-5  ${isSticky ? "bg-style text-style lg:p-5 lg:px-0 " : "bg-white lg:px-0"}`}
       >
         <div className="relative m-auto flex items-center justify-between lg:w-[85%]">
-          <button onClick={()=>navigate("/home")}>
+          <button onClick={() => navigate("/home")}>
             <img src={logo} alt="logo" />
           </button>
 
