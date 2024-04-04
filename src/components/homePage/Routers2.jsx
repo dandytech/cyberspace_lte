@@ -14,6 +14,7 @@ import router1 from "../../data/router2.png";
 import router2 from "../../data/router1.png";
 import router3 from "../../data/router3.png";
 import { useEffect, useState } from "react";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 export default function Routers2() {
   const [slidesPerView, setSlidesPerView] = useState(3); // Default slidesPerView
@@ -44,7 +45,9 @@ export default function Routers2() {
         </div>
         <div className="flex items-center justify-between gap-2">
           <button>See More</button>
-          <span className="text-[#0080CF]">></span>
+          <span className="text-[#0080CF]">
+            <RiArrowRightSLine />
+          </span>
         </div>
       </div>
 
@@ -131,8 +134,7 @@ export default function Routers2() {
 
           <SwiperSlide className="h-">
             {" "}
-            <div className="items-center justify-between gap-2 rounded-2xl bg-[url('/src/data/Frame1.png')] bg-cover bg-center bg-no-repeat px-2 text-white lg:flex lg:h-[250px] h-auto lg:px-5">
-
+            <div className="h-auto items-center justify-between gap-2 rounded-2xl bg-[url('/src/data/Frame1.png')] bg-cover bg-center bg-no-repeat px-2 text-white lg:flex lg:h-[250px] lg:px-5">
               <div className="flex flex-col justify-between gap-3 py-5 lg:w-[70%] lg:gap-10">
                 <div className="space-y-2">
                   <span className="rounded-xl bg-gray-600  px-5 py-2">

@@ -7,7 +7,12 @@ export default function Icons2() {
   return (
     <div className="md:text-md m-auto mb-5 mt-10 grid w-[95%] grid-cols-1 gap-10 rounded-xl border-2 p-5 text-sm shadow-md  md:grid-cols-4 md:justify-between md:p-10 lg:flex lg:w-[85%] lg:grid-cols-4 lg:text-lg">
       <div className="flex items-center justify-center gap-3 text-center md:justify-between">
-        <div className="iconbg rounded-xl">
+        <div
+          className="iconbg rounded-xl"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+        >
           <img src={Package} alt="icon1" />
         </div>
         <div>
@@ -17,7 +22,10 @@ export default function Icons2() {
       </div>
       <div className="hidden border font-light lg:block"></div>
 
-      <div className="flex items-center justify-center gap-1 text-center lg:justify-between">
+      <div
+        className="flex items-center justify-center gap-1 text-center lg:justify-between"
+        data-aos="flip-left"
+      >
         <div className="iconbg rounded-xl">
           <img src={Trophy} alt="icon1" />
         </div>
@@ -26,9 +34,13 @@ export default function Icons2() {
           <p className="font-light">100% Quality products</p>
         </div>
       </div>
+
       <div className="hidden border font-light lg:block"></div>
 
-      <div className="flex items-center justify-center gap-1 text-center lg:justify-between">
+      <div
+        className="flex items-center justify-center gap-1 text-center lg:justify-between"
+        data-aos="flip-right"
+      >
         <div className="iconbg rounded-xl">
           <img src={Creditcard} alt="icon1" />
         </div>
@@ -37,9 +49,15 @@ export default function Icons2() {
           <p className="font-light">Your money is safe</p>
         </div>
       </div>
+
       <div className="hidden border font-light  lg:block"></div>
       <div className="flex items-center justify-center gap-1 text-center lg:justify-between">
-        <div className="iconbg rounded-xl">
+        <div
+          className="iconbg rounded-xl"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+        >
           <img src={Headphone} alt="icon1" />
         </div>
         <div>

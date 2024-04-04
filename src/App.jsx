@@ -5,8 +5,17 @@ import GlobalStyles from "./styles/GlobalStyles";
 import Home from "./pages/Home";
 import { DarkModeProvider } from "../context/DarkModeContext";
 import DeviceDetails from "./pages/DeviceDetails";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 function App() {
+  //animation
+  useEffect(() => {
+    // Initialize AOS library
+    AOS.init();
+  }, []);
+
   return (
     <>
       <DarkModeProvider>

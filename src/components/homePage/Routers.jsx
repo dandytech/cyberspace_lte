@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom";
 import router1 from "../../data/router1.png";
 import router2 from "../../data/router2.png";
 import router3 from "../../data/router3.png";
+import { RiArrowRightSLine } from "react-icons/ri";
 
 export default function Routers() {
   const navigate = useNavigate();
@@ -13,7 +14,12 @@ export default function Routers() {
         <span className="text-[#0080CF]">Interner Router</span>
       </p>
       <div className="items-center justify-between gap-3 space-y-5 md:flex md:space-y-0 lg:flex lg:space-y-0">
-        <div className="relative flex flex-col items-center justify-between gap-5 rounded-xl  border border-[#0080CF] px-5 py-2 text-center font-light">
+        <div
+          className="relative flex flex-col items-center justify-between gap-5 rounded-xl  border border-[#0080CF] px-5 py-2 text-center font-light"
+          data-aos="flip-left"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+        >
           <p>
             <img src={router1} alt="Router image" />
           </p>
@@ -32,7 +38,10 @@ export default function Routers() {
           </div>
         </div>
 
-        <div className="relative flex flex-col items-center justify-between gap-5 rounded-xl  border border-[#0080CF] px-5 py-2 text-center font-light">
+        <div
+          className="relative flex flex-col items-center justify-between gap-5 rounded-xl  border border-[#0080CF] px-5 py-2 text-center font-light"
+          data-aos="flip-left"
+        >
           <p>
             <img src={router2} alt="Router image" />
           </p>
@@ -51,7 +60,13 @@ export default function Routers() {
             Hot
           </div>
         </div>
-        <div className="relative flex flex-col items-center justify-between gap-5 rounded-xl  border border-[#0080CF] px-5 py-2 text-center font-light">
+
+        <div
+          className="relative flex flex-col items-center justify-between gap-5 rounded-xl  border border-[#0080CF] px-5 py-2 text-center font-light"
+          data-aos="flip-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+        >
           <p>
             <img src={router3} alt="Router image" />
           </p>
@@ -75,7 +90,10 @@ export default function Routers() {
       <div className="mt-10 flex items-center justify-center pb-10">
         <button className=" flex items-center justify-between gap-2 rounded-2xl  border border-[#0080CF] px-5 py-3 text-center font-light text-[#0080CF]">
           <span> View All</span>
-          <span>></span>
+          <span>
+            {" "}
+            <RiArrowRightSLine />
+          </span>
         </button>
       </div>
     </div>

@@ -22,17 +22,26 @@ export const plans = [
   },
 ];
 
+import { RiArrowRightSLine } from "react-icons/ri";
+
 export default function Explore() {
   return (
     <div className="md:text-md m-auto w-[95%] pb-10 text-sm lg:w-[85%] lg:text-lg">
-      <div className="mb-5 mt-20 flex items-center justify-between border-b-2">
+      <div
+        className="mb-5 mt-20 flex items-center justify-between border-b-2"
+        data-aos="flip-left"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+      >
         <div className=" md:text-md text-md w-auto border-b-4 border-b-[#0080CF] lg:text-lg">
           <span> Our Starter Plans and </span>
           <span className="text-[#0080CF]">Data Pricing</span>
         </div>
         <div className="flex items-center justify-between gap-2">
           <button>See More</button>
-          <span className="text-[#0080CF]">></span>
+          <span className="text-[#0080CF]">
+            <RiArrowRightSLine />
+          </span>
         </div>
       </div>
 
@@ -40,7 +49,7 @@ export default function Explore() {
         {plans.map((plan) => (
           <div
             key={plan.id}
-            className="rounded-xl border border-[#0080CF] p-5 lg:px-20 lg:py-10"
+            className="rounded-xl border border-[#0080CF] p-5 hover:border-[#DE0F04] lg:px-20 lg:py-10"
           >
             <div className="border-b py-3 text-[#0080CF] ">{plan.name}</div>
             <div className="border-b py-3 font-light text-gray-300 ">

@@ -46,7 +46,7 @@ export default function LatestNews() {
         {blogs.map((blog) => (
           <div
             key={blog.id}
-            className="flex flex-col items-center border border-[#057FCC] p-5 md:p-5 lg:block"
+            className="flex flex-col items-center border border-[#057FCC] p-5 hover:border-[#DE0F04] md:p-5 lg:block "
           >
             <div className="mb-4 w-full ">
               <img src={blog.banner} alt="banner" />
