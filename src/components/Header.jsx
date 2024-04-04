@@ -95,7 +95,7 @@ export default function Header() {
                 </span>
               </button>
             </div>
-            <div className="text-lg">
+            <div className="text-lg ml-7">
               <DarkModeToggle />
             </div>
 
