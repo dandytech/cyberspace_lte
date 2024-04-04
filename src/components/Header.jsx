@@ -13,12 +13,14 @@ import { useNavigate } from "react-router-dom";
 
 export default function Header() {
   const [show, setShow] = useState(false);
+  const [isSticky, setIsSticky] = useState(false);
+  const navigate = useNavigate();
+
   const handleShow = () => {
     setShow(!show);
   };
 
-  const [isSticky, setIsSticky] = useState(false);
-
+  //scroll effect
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
@@ -35,11 +37,11 @@ export default function Header() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []); // Empty dependency array ensures the effect runs only once
-  const navigate = useNavigate();
 
+  
   return (
     <div
-      className={`w-[100] z-50 ${isSticky ? "border-b-3 header fixed z-50 m-auto w-[100%] border-b-2" : ""}`}
+      className={`z-50 w-[100] ${isSticky ? "border-b-3 header fixed z-50 m-auto w-[100%] border-b-2" : ""}`}
     >
       <div className="hidden bg-[url('/src/data/Rectangle1.png')] bg-cover  bg-center bg-no-repeat p-3 font-extralight text-white lg:block">
         <div className="m-auto flex w-[85%]  items-center justify-between">
@@ -95,7 +97,7 @@ export default function Header() {
                 </span>
               </button>
             </div>
-            <div className="text-lg ml-7">
+            <div className="ml-7 text-lg">
               <DarkModeToggle />
             </div>
 

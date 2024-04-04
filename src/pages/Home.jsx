@@ -10,8 +10,36 @@ import LatestNews from "../components/homePage/LatestNews";
 import NewsLetter from "../components/homePage/NewsLetter";
 import whatsapp from "../data/whatsapp.png";
 import chat from "../data/chatMsg.png";
+import { useEffect, useState } from "react";
+import { AiOutlineArrowUp } from "react-icons/ai";
 
 export default function Home() {
+  //scroll up
+  const [visible, setVisible] = useState(false);
+
+  const scroll = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+
+      // Check if the scroll position is greater than or equal to 20 pixels
+      setVisible(scrollY > 100);
+    };
+
+    // Attach the scroll event listener when the component mounts
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up the event listener when the component unmounts
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []); // Empty dependency array ensures the effect runs only once
+
   return (
     <div className="bg-style text-style h-auto bg-white">
       <Banner />
@@ -55,6 +83,17 @@ export default function Home() {
       <NewsLetter />
 
       {/* <TestSwiperComponent /> */}
+
+      <div
+        onClick={scroll}
+        className={`bottom-0 right-0 z-50  cursor-pointer items-center justify-center  ${
+          visible ? "fixed bottom-0 right-0" : ""
+        }`}
+      >
+        <span className="text-2x text-style bg-style md:text-3xl lg:text-4xl">
+          <AiOutlineArrowUp />
+        </span>
+      </div>
     </div>
   );
 }
